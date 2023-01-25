@@ -1,0 +1,142 @@
+
+
+@use './partials/mixins';
+@use './partials/global';
+
+
+
+
+
+body{
+
+    header{
+
+        .logo{
+
+        }
+
+        .links{
+
+            a{
+
+            }
+
+            .link-trabalhos{
+
+            }
+
+            .link-sobre{
+
+            }
+
+        }
+
+
+        .links-social{
+
+        }
+
+
+    }
+
+
+    .main{
+
+        .main-wrapper{
+
+            .title{
+
+                .title-1{}
+                .title-2{}
+                .title-3{}
+                .title-4{}
+
+            }
+
+            p{
+
+            }
+
+        }
+
+    }
+
+    .trabalhos{
+
+        .wrapper-trabalhos{
+
+            .card{
+
+                .card-wrapper{
+
+                    .card-text{
+
+                        h2{}
+
+                        h3{}
+
+                    }
+
+                    .card-icon{
+
+                    }
+
+                }
+
+                img{
+
+                }
+
+            }
+
+
+
+        }
+
+
+
+    }
+
+
+    .sobre{
+
+        .wrapper-sobre{
+
+            .container-sobre{
+
+                img{}
+
+                p{
+                    span{}
+
+
+                }
+            }
+
+        }
+
+        .container-icones{
+
+        }
+
+
+    }
+
+
+    footer{
+
+        a{}
+        
+        p{}
+
+    }
+
+
+
+}
+
+
+
+
+
+
