@@ -89,7 +89,7 @@ body{
 
     #main{
 
-        height: 80vh;
+        min-height: 80vh;
         min-width: 100%;
 
         background-color: var.$cream;
@@ -329,7 +329,7 @@ body{
 
         position: relative;
 
-        min-height: 600px;
+
         min-width: 100%;
 
         .wrapper-sobre{
@@ -415,7 +415,7 @@ body{
 
     footer{
 
-        height: 80px;
+        height: 64px;
         width: 100%;
 
         display: flex;

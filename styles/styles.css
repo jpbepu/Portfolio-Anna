@@ -117,7 +117,7 @@ body header .header-wrapper div a:hover {
   font-weight: 600;
 }
 body #main {
-  height: 80vh;
+  min-height: 80vh;
   min-width: 100%;
   background-color: #FFFDF7;
   display: flex;
@@ -311,7 +311,6 @@ body #trabalhos .wrapper-trabalhos .card:hover .card-txt-container {
 }
 body #sobre {
   position: relative;
-  min-height: 600px;
   min-width: 100%;
 }
 body #sobre .wrapper-sobre {
@@ -371,7 +370,7 @@ body #sobre .wrapper-sobre .container-icones img:hover {
   transform: translateY(-5px);
 }
 body footer {
-  height: 80px;
+  height: 64px;
   width: 100%;
   display: flex;
   align-items: center;
