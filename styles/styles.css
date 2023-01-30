@@ -280,7 +280,7 @@ body #trabalhos .wrapper-trabalhos .card .card-txt-container {
   color: #FFFDF7;
   position: absolute;
   bottom: 0;
-  z-index: 10;
+  z-index: 5;
   padding: 24px;
   opacity: 0;
   transition: 300ms;
