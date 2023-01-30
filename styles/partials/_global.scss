@@ -1,9 +1,31 @@
 
+@use './mixins';
+@use './var';
 
-h1, h2, h3{
-    font-family: 'Playfair Display', serif;
-}
 
 *{
-    font-family: 'Lora', serif;
+    box-sizing: border-box;
+}
+
+
+//maybe js?
+
+
+
+
+body{
+
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+
+
+h1{
+
+    font-family:'Playfair Display', serif;
+
 }

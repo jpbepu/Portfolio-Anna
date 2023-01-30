@@ -13,85 +13,147 @@
         <link rel="stylesheet" href="./styles/styles.css">
 
         <!--font imports-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,400&family=Playfair+Display:wght@500;800&display=swap" rel="stylesheet">
-
-
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Playfair+Display:wght@500;800&display=swap" rel="stylesheet">
     </head>
     <body>
 
         <header>
-            <a href="main" class="logo">anna carolina</a>
-            <div class="links">
-                <a href="trabalhos" class="link-trabalhos">trabalhos</a>
-                <a href="sobre" class="link-sobre">sobre</a>
-                <a href="#" class="cv">cv</a>
+            <div class="header-wrapper">
+
+                <a href="#main" class="logo">anna carolina</a>
+
+                <div class="links">
+                    <a href="#trabalhos" class="link-trabalhos">trabalhos</a>
+                    <a href="#sobre" class="link-sobre">sobre</a>
+                    <a href="#" class="cv">cv</a>
+                </div>
+    
+                <div class="links-social">
+                    <a href="https://medium.com/@annacarolinamoraes076">
+                        <img src="./images/medium_dark.png" alt="Medium">
+                    </a>
+                    <a href="https://www.linkedin.com/in/anna-moraes-1771aa47/">
+                        <img src="./images/in_dark.png" alt="LinkedIn">
+                    </a>
+                </div>
+
             </div>
 
-            <div class="links-social">
-                <!-- social icons -->
-            </div>
         </header>
 
 
-        <section class="main">
+        <section id="main">
 
             <div class="main-wrapper">
                 <h1 class="title">
                     <span class="title-1">Olá, seja bem vind@!</span><br>
-                    <span class="title-2">Sou a <span class="nome">Anna Carolina</span></span><br>
+                    <span class="title-2">Sou a <span id="nome">Anna Carolina</span></span><br>
                     <span class="title-3">UX designer pronta para</span><br>
                     <span class="title-4">projetar soluções para você!</span><br>
                 </h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, facilis laborum quia itaque, excepturi illum, tempora consectetur amet sit voluptas asperiores officia accusantium quos. Praesentium dicta aut distinctio similique ab!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, facilis laborum quia itaque, excepturi illum!</p>
                 
-                <!--icone seta #-->
+                <a href="#arrow">
+                    <img id="arrow" src="./images/Vector.png" alt="">
+                </a>
+
 
             </div>
 
         </section>
 
-        <section class="trabalhos">
+        <section id="trabalhos">
 
             <div class="wrapper-trabalhos">
 
 
                 <!-- card de trabalho-->                
                 <div class="card">
-                    <a href="#" class="card-wrapper">
-                        <div class="card-text">
-                            <h2>Titulo do trabalho</h2>
-                            <h3>UX Design</h3>
+                    <a href="#">
+                        <div class="card-txt-container">
+                            <h2>
+                                Título do trabalho <br>
+                                <span>UX/UI</span>
+                            </h2>
+    
+                            <img src="./images/medium_white.png" alt="">
                         </div>
-                        <div class="card-icon">
-
-                            <!--card icon #-->
-
-                        </div>
+                        <img class="foto-trabalho" src="./images/peaches.jpg" alt="">
                     </a>
-
-                    <img src="#" alt="#">
+ 
                 </div>
+                
+
 
             </div>
 
         </section>
 
-        <section class="sobre">
+        <section id="sobre">
 
             <div class="wrapper-sobre">
                 <div class="container-sobre">
-                    <img src="#" alt="#">
-                    <p>
-                        <span>Oi, eu sou a Anna!</span>
+                    <img src="./images/sobre.png" alt="#">
+                    <div>
+                        <p>Oi, eu sou a Anna!</p>
 
-                        Uma UX/UI Design, com formação anterior em enfermagem e background de 13 anos em gestão de pessoas e com conhecimento em capacitação em projetos. Posso dizer que sou uma pessoa comunicativa e empática, adoro tudo o que envolva comportamento humano, pesquisa e tecnologia. Buscar novas áreas é buscar novos desafios, por isso meu foco é sempre aplicar o que for eficiente e agradável para ajudar tanto a experiência do usuário quanto em gerar melhores resultados para a empresa. Buscar uma carreira que me permitisse interagir e aplicar a diversidade do design nas soluções centradas nos usuários, é algo que quero fazer sempre e dar o meu melhor e acredito estar preparada para novos desafios.
+                        <p>
+                            Uma UX/UI Designer, com formação anterior em enfermagem,
+                            
+                            <span>
+                            com background de 13 anos em gestão de pessoas e com conhecimento em 
+                            capacitação em projetos.
+                            </span>
+
+                            Posso dizer que
+
+                            <span>
+                                sou uma pessoa comunicativa e empática,
+                            </span>
+                            
+                            adoro tudo o que envolva comportamento humano, pesquisa 
+                            e tecnologia.
+                        </p>
+ 
+                        <p>
+                            Buscar novas áreas é buscar novos desafios, por isso meu foco é sempre 
+                            
+                            <span>
+                                aplicar o que for eficiente e agradável para ajudar tanto a experiência 
+                                do usuário quanto em gerar melhores resultados para a empresa. 
+
+                            </span>
+                            
+                        </p>
+
+                        <p>
+                            Buscar uma carreira que me permitisse interagir e aplicar a diversidade 
+                            do design nas soluções centradas nos usuários, é algo que quero fazer 
+                            sempre e dar o meu melhor e acredito estar preparada para novos desafios.
+                        </p>
+
                     
-                    </p>
+                    </div>
                 </div>
                 <div class="container-icones">
-                    <!-- icones -->
+
+                    <a href="https://wa.me/19993080985">
+                        <img src="./images/wpp.png" alt="">
+                    </a>
+
+
+                    <a href="mailto:annacarolina_87@hotmail.com">
+                        <img src="./images/mail.png" alt="">
+                    </a>
+
+                    <a href="https://medium.com/@annacarolinamoraes076">
+                        <img src="./images/medium.png" alt="">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/anna-moraes-1771aa47/">
+                        <img src="./images/in.png" alt="">
+                    </a>
+
                 </div>
             </div>
 
@@ -103,6 +165,6 @@
         </footer>
 
         
-        <script src="" async defer></script>
+        <script src="./app.js" async defer></script>
     </body>
 </html>

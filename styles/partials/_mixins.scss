@@ -1,1 +1,20 @@
 
+@use './var';
+
+@mixin flex-center {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@mixin text {
+
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: var.$dark-purple;
+
+}
