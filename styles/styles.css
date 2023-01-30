@@ -115,17 +115,17 @@ body #main {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 700px;
 }
 body #main .main-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
+  margin: auto;
 }
 body #main .main-wrapper .title {
   font-size: 64px;
+  margin-top: 100px;
   text-align: center;
   font-family: "Playfair Display", serif;
   font-weight: 500;
@@ -393,10 +393,10 @@ body footer p {
   }
   body #main .main-wrapper {
     min-height: auto;
-    min-width: 400px;
-    margin: 20px;
+    min-width: 350px;
   }
   body #main .main-wrapper .title {
+    padding: 0 16px;
     font-size: max(7vw, 26px);
   }
   body #main .main-wrapper p {
@@ -414,7 +414,7 @@ body footer p {
   body #trabalhos .wrapper-trabalhos {
     flex-direction: column;
     width: 100%;
-    margin: 40px 10px;
+    margin: 40px 16px;
   }
   body #trabalhos .wrapper-trabalhos .card {
     width: 100%;
