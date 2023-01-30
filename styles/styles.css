@@ -1,3 +1,19 @@
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -44,9 +60,14 @@ body header .header-wrapper div a {
   margin: 0 20px;
   text-decoration: none;
   color: #1F0021;
+  font-weight: 400;
+  transition: 100ms;
 }
 body header .header-wrapper div a img {
   height: 24px;
+}
+body header .header-wrapper div a:hover {
+  font-weight: 600;
 }
 body #main {
   height: 80vh;
@@ -71,11 +92,59 @@ body #main .main-wrapper .title {
   font-weight: 500;
   color: #1F0021;
 }
+body #main .main-wrapper .title .title-1 {
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+body #main .main-wrapper .title .title-2 {
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
 body #main .main-wrapper .title .title-2 #nome {
   color: #5E1742;
   font-weight: 800;
 }
+body #main .main-wrapper .title .title-3 {
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+body #main .main-wrapper .title .title-4 {
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
 body #main .main-wrapper p {
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
   width: 70vw;
   max-width: 600px;
   text-align: center;
@@ -83,6 +152,26 @@ body #main .main-wrapper p {
   font-weight: 500;
   font-size: 20px;
   color: #1F0021;
+}
+body #main .main-wrapper div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+  transform: translateY(0px);
+  transition: 100ms;
+}
+body #main .main-wrapper div:hover {
+  transform: translateY(10px);
 }
 body #trabalhos {
   height: 80vh;
@@ -194,6 +283,11 @@ body #sobre .wrapper-sobre .container-icones img {
   -o-object-fit: contain;
      object-fit: contain;
   margin: 0 16px;
+  transform: translateY(0px);
+  transition: 100ms;
+}
+body #sobre .wrapper-sobre .container-icones img:hover {
+  transform: translateY(-5px);
 }
 body footer {
   height: 80px;

@@ -3,6 +3,7 @@
 @use './partials/mixins';
 @use './partials/global';
 @use './partials/var';
+@use './partials/animations';
 
 
 
@@ -56,9 +57,17 @@ body{
                     text-decoration: none;
                     color: var.$dark-purple;
 
+                    font-weight: 400;
+                    transition: 100ms;
+
                     img{
 
                         height: 24px;
+                    }
+
+
+                    &:hover{
+                        font-weight: 600;
                     }
 
                 }
@@ -104,8 +113,16 @@ body{
                 font-weight: 500;
                 color: var.$dark-purple;
 
-                .title-1{}
+                .title-1{
+                    @include mixins.fadein;
+                    animation-delay: 500ms;
+
+
+                }
                 .title-2{
+                    @include mixins.fadein;
+                    animation-delay: 600ms;
+
 
                     #nome{
                         color: var.$purple;
@@ -113,12 +130,24 @@ body{
                     }
 
                 }
-                .title-3{}
-                .title-4{}
+                .title-3{
+                    @include mixins.fadein;
+                    animation-delay: 700ms;
+
+                }
+                .title-4{
+                    @include mixins.fadein;
+                    animation-delay: 800ms;
+
+                }
 
             }
 
             p{
+
+                @include mixins.fadein;
+                animation-delay: 1000ms;
+
 
                 width: 70vw;
                 max-width: 600px;
@@ -126,6 +155,27 @@ body{
 
                 @include mixins.text;
 
+
+            }
+
+            div{
+
+                @include mixins.flex-center;
+
+
+                width: 40px;
+                height: 40px;
+
+
+                @include mixins.fadein;
+                animation-delay: 1000ms;
+
+                transform: translateY(0px);
+                transition: 100ms;
+
+                &:hover{
+                    transform: translateY(10px);
+                }
 
             }
 
@@ -299,6 +349,12 @@ body{
                 height: 100%;
                 object-fit: contain;
                 margin: 0 16px;
+                transform: translateY(0px);
+                transition: 100ms;
+
+                &:hover{
+                    transform: translateY(-5px);
+                }
             }
 
             }

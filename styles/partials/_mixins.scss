@@ -1,5 +1,6 @@
 
 @use './var';
+@use './animations';
 
 @mixin flex-center {
 
@@ -16,5 +17,13 @@
   font-weight: 500;
   font-size: 20px;
   color: var.$dark-purple;
+
+}
+
+@mixin fadein {
+
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 
 }
