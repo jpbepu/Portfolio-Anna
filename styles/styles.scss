@@ -4,6 +4,7 @@
 @use './partials/global';
 @use './partials/var';
 @use './partials/animations';
+@use './partials/mediaq';
 
 
 
@@ -45,6 +46,7 @@ body{
 
             .logo{
 
+                font-weight: bold;
                 text-decoration: none;
                 color: var.$orange;
 
@@ -158,7 +160,21 @@ body{
 
             }
 
-            div{
+            .mobile-icons{
+                
+                @include mixins.flex-center;
+                justify-content: space-around;
+                width: 50%;
+                margin:20px 0;
+
+                display: none;
+
+                @include mixins.fadein;
+                animation-delay: 1000ms;
+
+            }
+
+            #arrow{
 
                 @include mixins.flex-center;
 
@@ -198,14 +214,25 @@ body{
 
         .wrapper-trabalhos{
 
-        
+            margin: 0 40px;
             height: 85%;
+
+            @include mixins.flex-center;
+
+            flex-direction: row;
+
+
+
 
 
             .card{
 
-                width: 400px;
+                margin: 10px;
+
+
                 height: 100%;
+
+                position: relative;
 
                 border-radius: 12px;
 
@@ -218,6 +245,7 @@ body{
                 .card-txt-container{
 
                     @include mixins.text;
+                    font-size: 1.3rem;
                     font-weight: 600;
 
                     color: var.$cream;
@@ -225,7 +253,7 @@ body{
                     position: absolute;
                     bottom: 10%;
                     z-index: 10;
-                    padding-left: 24px;
+                    padding: 24px;
 
 
                     opacity: 0;
@@ -245,6 +273,8 @@ body{
                     width: 110%;
                     height: 110%;
 
+                    object-fit: cover;
+
                     opacity: 1;
                     transform: scale(1);
                     filter: blur(0px);
@@ -255,7 +285,7 @@ body{
 
                 &:hover .foto-trabalho{
 
-                    opacity: 0.4;
+                    opacity: 0.6;
                     transform: scale(1.02);
                     filter: blur(4px);
 
@@ -320,7 +350,7 @@ body{
                     font-weight: 400;
                     padding: 0 0 0 30px;
 
-                    min-width: 400px;
+
 
                     span{
 
@@ -383,7 +413,6 @@ body{
 
         a{
 
-
             text-decoration: none;
             @include mixins.text;
             color: var.$cream;
@@ -409,3 +438,160 @@ body{
 
 
 
+@media screen and (max-width: 920px) {
+
+    body {
+
+        header{
+
+            .header-wrapper{
+
+                .links{
+                    .link-trabalhos{
+                        display: none;
+                    }
+                    .link-sobre{
+                        display: none;
+                    }
+                }
+
+                .links-social{
+                    display: none;
+                }
+
+            }
+
+        }
+
+        #main{
+
+            height: auto;
+
+            .main-wrapper{
+                min-height: auto;
+                min-width: 400px;
+                margin: 20px;
+
+                .title{
+                    font-size: max(7vw, 26px);
+                }
+
+                p{
+                    font-size: max(4vw, 16px);
+                }
+
+                .mobile-icons{
+                    display: flex;
+                }
+
+                #arrow{
+                    margin-top: 10px;
+                }
+
+            }
+
+
+
+        }
+
+        #trabalhos{
+
+            height: auto;
+
+            .wrapper-trabalhos{
+
+                flex-direction: column;
+                width: 100%;
+                margin: 40px 10px;
+          
+                .card{
+
+                  width: 100%;
+                  height: 200px;
+
+
+                    .foto-trabalho{
+
+                    opacity: 0.6;
+
+                    }
+
+                    .card-txt-container{
+                        
+
+                    font-size: 1rem;
+                    opacity: 1;
+
+                    img{
+                        align-self: flex-end;
+                        width: 3rem;
+                    }
+
+                    }
+          
+                }
+
+
+
+          
+              }
+
+        } 
+
+        #sobre{
+
+            .wrapper-sobre{
+
+                padding: 0;
+                margin: auto;
+
+
+                .container-sobre{
+
+                    padding: 0;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+
+                    img{
+                        margin:40px 0;
+                        width: 70%;
+                    } 
+
+                    div{
+
+                        p{
+                            margin: auto;
+                            padding: auto;
+                            min-width: none;
+                            font-size: 16px;
+                        }
+
+
+                        width: 90%;
+                    }
+
+
+                }
+
+                .container-icones{
+
+                    width: 70vw;
+                    margin:32px 0;
+                    padding: 0;
+
+                    img{
+                        height: 40px;
+                    }
+
+                }
+
+            }
+
+
+        }
+
+    }
+
+
+}
