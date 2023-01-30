@@ -226,6 +226,7 @@ body #main .main-wrapper #arrow {
   align-items: center;
   width: 40px;
   height: 40px;
+  margin: 20px 0;
   -webkit-animation-name: fadein;
           animation-name: fadein;
   -webkit-animation-duration: 1s;
@@ -274,11 +275,11 @@ body #trabalhos .wrapper-trabalhos .card .card-txt-container {
   font-weight: 500;
   font-size: 20px;
   color: #1F0021;
-  font-size: 1.3rem;
+  font-size: 1em;
   font-weight: 600;
   color: #FFFDF7;
   position: absolute;
-  bottom: 10%;
+  bottom: 0;
   z-index: 10;
   padding: 24px;
   opacity: 0;
@@ -286,6 +287,9 @@ body #trabalhos .wrapper-trabalhos .card .card-txt-container {
 }
 body #trabalhos .wrapper-trabalhos .card .card-txt-container span {
   font-weight: 400;
+}
+body #trabalhos .wrapper-trabalhos .card .card-txt-container img {
+  width: 2.5em;
 }
 body #trabalhos .wrapper-trabalhos .card .foto-trabalho {
   width: 110%;
@@ -440,8 +444,7 @@ body footer p {
     opacity: 1;
   }
   body #trabalhos .wrapper-trabalhos .card .card-txt-container img {
-    align-self: flex-end;
-    width: 3rem;
+    width: 2.5em;
   }
   body #sobre .wrapper-sobre {
     padding: 0;
