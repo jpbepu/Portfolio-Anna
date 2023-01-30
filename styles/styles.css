@@ -31,6 +31,13 @@ h1 {
   font-family: "Playfair Display", serif;
 }
 
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 @media screen and (max-width: 600px) {
   body #main {
     height: auto;
@@ -210,6 +217,9 @@ body #main .main-wrapper .mobile-icons {
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
 }
+body #main .main-wrapper .mobile-icons img {
+  height: 40px;
+}
 body #main .main-wrapper #arrow {
   display: flex;
   justify-content: center;
@@ -338,7 +348,7 @@ body #sobre .wrapper-sobre .container-sobre p:first-child {
 }
 body #sobre .wrapper-sobre .container-icones {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
   flex-direction: row;
   width: 50%;
@@ -452,12 +462,12 @@ body footer p {
   }
   body #sobre .wrapper-sobre .container-sobre div p {
     margin: auto;
-    padding: auto;
+    padding: 8px;
     min-width: none;
     font-size: 16px;
   }
   body #sobre .wrapper-sobre .container-icones {
-    width: 70vw;
+    width: 80vw;
     margin: 32px 0;
     padding: 0;
   }
